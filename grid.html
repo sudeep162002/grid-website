@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+
+
+
+
+
+  
+
+
+
+
+
+    <style>
+      body{
+        background-color: black;
+
+
+      }
+      .container {
+        display: grid;
+        grid-gap: 1rem;
+        
+        
+        
+
+        grid-template-areas:
+          "logo navbar navbar navbar navbar navbar navbar"
+          "body body body body body body body "
+          "para1 para1 para1 para1 para1 parapic1 parapic1 "
+          "parapic2 parapic2 para2 para2 para2 para2 para2 "
+          "para3 para3 para3 para3 para3 parapic3 parapic3 "
+          "parapic4 parapic4 para4 para4 para4 para4 para4 "
+          "smh smh smh smh smh smh smh"
+          "footer footer footer footer footer footer footer ";
+      }
+      .logo {
+        grid-area: logo;
+        background-color: blue;
+      }
+      .navbar {
+        grid-area: navbar;
+
+        display: flex;
+        justify-content: center;
+        opacity: 0.6;
+      }
+      .body {
+        grid-area: body;
+        
+        display: grid;
+        
+        grid-template-areas: 
+        'left right'
+        'down down';
+
+
+      }
+      .footer {
+        grid-area: footer;
+        display: flex;
+        
+        justify-content: center;
+        gap: 211px;
+        padding: 19px;
+        background-color: #ff009e;
+      }
+      .sm{
+       
+        height: 66px;
+        width: 190px;
+
+
+      }
+      
+      img {
+        height: 88px;
+        width: 153px;
+      }
+      .navcomp {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 334px;
+        cursor: pointer;
+        background-color: gray;
+      }
+      .navcomp:hover {
+        transform: scale(1.5);
+        transition: all 0.36s ease-in-out;
+        font-size: large;
+        opacity: 50;
+        font-weight: 700;
+        background-color: greenyellow;
+        
+      }
+      .left{
+          grid-area: left;
+          background-color: #062745;
+          display: flex;
+         
+
+      }
+      .right{
+          grid-area: right;
+          border: 12px solid #e90c0c;
+          display: flex;
+          animation: slider 18s infinite linear;
+
+      }
+      @keyframes slider{
+        0%{ background-image: url(food1.jpg); }
+        20%{background-image: url(food2.jpg); }
+        40%{background-image: url(food3.jpg); }
+        60%{background-image: url(food4.jpg); }
+        80%{background-image: url(food5.jpg); }
+        100%{background-image: url(food3.jpg);}
+      }
+      .down{
+          grid-area: down;
+         
+         
+        
+        
+
+      }
+      .down h1{
+        color: whitesmoke;
+        align-items: center;
+        margin-left: 692px
+      }
+      .down p{
+        color: whitesmoke;
+      }
+      .left ul{
+          font-size: larger;
+          text-shadow: 4px;
+          
+      }
+      
+      li{
+          text-decoration: solid;
+          color: rgb(199, 23, 37);
+
+      }
+      li:hover{
+          cursor: pointer;
+          background-color: blue;
+      }
+    .logo  img {
+    height: 65px;
+    width: 186px;
+}
+.logo img:hover{
+
+  transform: scale(1.5) ;
+  transition: all 0.36s ease-in-out;
+  cursor: pointer;
+
+
+}
+.sm:hover{
+  transform: scale(1.5) ;
+  transition: all 0.36s ease-in-out;
+  cursor: pointer;
+}
+
+.para1{
+  grid-area: para1;
+
+width: 943px;
+
+
+
+}
+.para2{
+  grid-area: para2;
+ 
+  width: 1075px;
+
+
+}
+.para3{
+  grid-area: para3;
+ 
+  
+}
+
+
+
+
+.para4{
+  grid-area: para4;
+  
+  width: 1093px;
+
+
+}
+.parapic1{
+grid-area: parapic1;
+
+margin-right: 52px;
+    width: 525px;
+    
+}
+.parapic2{
+
+  grid-area: parapic2;
+  
+  
+}
+.parapic3{
+
+  grid-area: parapic3;
+  
+  width: 540px;
+}
+.parapic4{
+
+  grid-area: parapic4;
+  
+  width: 397px;
+}
+p{
+
+  color: rgb(228, 224, 22);
+}
+.paraimg{
+
+  height: 50px;
+}
+.parapic1 img{
+  width: 412px;
+  height: 177px;
+  border: 15px solid blue;
+}
+.parapic2 img{
+  width: 391px;
+  height: 157px;
+  border: 15px solid blue;
+
+}
+.parapic3 img{
+  width: 430px;
+  height: 179px;
+  border: 15px solid blue;
+}
+.parapic4 img{
+  width: 379px;
+  height: 162px;
+  border: 15px solid blue;
+}
+.smh{
+
+  grid-area: smh;
+  
+}
+.smh h1{
+  color: blue;
+  margin-left: 617px;
+}
+
+
+
+      
+
+      
+
+
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="logo">
+        <img src="2.jpg" alt="" />
+      </div>
+
+      <div class="navbar">
+        <div class="navcomp">HOME</div>
+        <div class="navcomp">ABOUT US</div>
+        <div class="navcomp">CONTACT US</div>
+        <div class="navcomp">TRIAL</div>
+      </div>
+      <div class="body">
+          <div class="left">
+              <ul>
+                  <li>indian</li>
+                  <hr>
+                  <li>continental</li>
+                  <hr>
+                  <li>chines</li>
+                  <hr>
+                  <li>thai</li>
+                  <hr>
+                  <li>mangolian</li>
+                  <hr>
+                  <li>japanees</li>
+              </ul>
+          </div>
+          <div class="right"></div>
+          <div class="down">
+            <h1>WELCOME</h1>
+            
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, quae voluptatibus voluptas non dolore cumque numquam deserunt alias illum veniam mollitia esse rem repudiandae, quaerat eos ratione expedita magnam. Architecto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, labore optio repudiandae beatae commodi molestias cum? Eaque saepe quis culpa, perspiciatis modi tempore quia, cupiditate fugiat similique, tempora recusandae est. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae consequatur dignissimos similique illo, ratione expedita delectus blanditiis rem necessitatibus repellat? Tempora, nulla aliquid est facilis nostrum excepturi at architecto aut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque veritatis repellat consequatur, laboriosam nobis iste iure libero minima sit sunt id a laudantium optio harum amet expedita eum similique fugit.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus cum adipisci rem voluptatem recusandae eveniet. Eum corrupti omnis eligendi, nisi est hic perspiciatis modi deleniti consequuntur blanditiis, enim ipsa laudantium? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti aspernatur nemo blanditiis aperiam vel eveniet magni ex architecto dolorem. Perferendis harum autem, similique aliquid tempora pariatur provident nemo nesciunt a!</p>
+           
+           
+          </div>
+          
+      </div>
+
+      <div class="para1"> <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit eligendi vitae fugiat quod, cum autem similique asperiores pariatur sed aliquam et fugit quis. Illum animi, atque ducimus modi doloremque perspiciatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus fuga blanditiis consequuntur amet repudiandae nihil sequi ullam, iure modi, aut earum expedita natus, iste dolor provident rem eum dolore. Cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur deleniti minima quas, ut placeat minus incidunt nisi cumque tempora animi neque cum. Laborum odio ipsam vel voluptas distinctio aliquam sunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, delectus reprehenderit eaque ut magnam recusandae voluptate obcaecati doloremque excepturi fugit quod accusamus natus et repellat fugiat magni consectetur maxime numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eum iusto tempora, optio voluptates vitae dolore ab neque, distinctio eligendi illo exercitationem. Voluptatibus nulla necessitatibus dolor ullam, incidunt quam sequi.</p></div>
+      <div class="parapic1"><img src="para1.jpg" alt=""> </div>
+
+      <div class="para2"> <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit eligendi vitae fugiat quod, cum autem similique asperiores pariatur sed aliquam et fugit quis. Illum animi, atque ducimus modi doloremque perspiciatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus fuga blanditiis consequuntur amet repudiandae nihil sequi ullam, iure modi, aut earum expedita natus, iste dolor provident rem eum dolore. Cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur deleniti minima quas, ut placeat minus incidunt nisi cumque tempora animi neque cum. Laborum odio ipsam vel voluptas distinctio aliquam sunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, delectus reprehenderit eaque ut magnam recusandae voluptate obcaecati doloremque excepturi fugit quod accusamus natus et repellat fugiat magni consectetur maxime numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eum iusto tempora, optio voluptates vitae dolore ab neque, distinctio eligendi illo exercitationem. Voluptatibus nulla necessitatibus dolor ullam, incidunt quam sequi.</p> </div>
+      <div class="parapic2"><img id="paraimg" src="para2.jpg" alt=""></div>
+
+      <div class="para3"><p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit eligendi vitae fugiat quod, cum autem similique asperiores pariatur sed aliquam et fugit quis. Illum animi, atque ducimus modi doloremque perspiciatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus fuga blanditiis consequuntur amet repudiandae nihil sequi ullam, iure modi, aut earum expedita natus, iste dolor provident rem eum dolore. Cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur deleniti minima quas, ut placeat minus incidunt nisi cumque tempora animi neque cum. Laborum odio ipsam vel voluptas distinctio aliquam sunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, delectus reprehenderit eaque ut magnam recusandae voluptate obcaecati doloremque excepturi fugit quod accusamus natus et repellat fugiat magni consectetur maxime numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eum iusto tempora, optio voluptates vitae dolore ab neque, distinctio eligendi illo exercitationem. Voluptatibus nulla necessitatibus dolor ullam, incidunt quam sequi.</p> </div>
+      <div class="parapic3"><img id="paraimg" src="para3.jpg" alt=""></div>
+
+      <div class="para4"><p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit eligendi vitae fugiat quod, cum autem similique asperiores pariatur sed aliquam et fugit quis. Illum animi, atque ducimus modi doloremque perspiciatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus fuga blanditiis consequuntur amet repudiandae nihil sequi ullam, iure modi, aut earum expedita natus, iste dolor provident rem eum dolore. Cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur deleniti minima quas, ut placeat minus incidunt nisi cumque tempora animi neque cum. Laborum odio ipsam vel voluptas distinctio aliquam sunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, delectus reprehenderit eaque ut magnam recusandae voluptate obcaecati doloremque excepturi fugit quod accusamus natus et repellat fugiat magni consectetur maxime numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eum iusto tempora, optio voluptates vitae dolore ab neque, distinctio eligendi illo exercitationem. Voluptatibus nulla necessitatibus dolor ullam, incidunt quam sequi.</p> </div>
+      <div class="parapic4"><img id="paraimg" src="para4.png" alt=""></div>
+
+      <div class="smh"><h1>Our Social Media Links</h1></div>
+
+
+
+
+
+
+      <div class="footer">
+        <div class="sm"> <img src="facebook.png" alt="">  </div>
+        <div class="sm"><img src="instagram.png" alt=""></div>
+        <div class="sm"><img src="linked.png" alt=""></div>
+        <div class="sm"><img src="tel.png" alt=""></div>
+            
+      </div>
+      
+        
+       
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+   
